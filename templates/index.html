@@ -1,0 +1,11 @@
+<!doctype html>
+<html manifest="{{ url_for('static', filename='omni.appcache') }}">
+<title>Tofustrap example app</title>
+<p id="origin-display"></p>
+<form id="notes">
+	<p><textarea name="body" rows="25" cols="80" disabled>Loading...</textarea></p>
+	<p><input id="notes-submit" type="submit" value="Save" disabled></p>
+</form>
+<script>
+{% include 'app.js' %}
+</script>
